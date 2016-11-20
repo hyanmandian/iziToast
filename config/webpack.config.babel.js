@@ -10,22 +10,23 @@ import {
 export default {
   context: ROOT,
   devtool: "source-map",
-  entry: {
-    [PLUGIN_NAME]: `${SRC}/index.js`,
-  },
+  entry: [
+    'babel-polyfill',
+    `${SRC}/index.js`,
+  ],
   resolve: {
     root: [
-      SRC,
+      ROOT,
     ],
   },
   output: {
     path: DIST,
     publicPath: DIST,
-    filename: "[name].min.js",
+    filename: `${PLUGIN_NAME}.min.js`,
   },
   plugins: [
     new webpack.NoErrorsPlugin(),
-    new ExtractTextPlugin("[name].min.css"),
+    new ExtractTextPlugin(`${PLUGIN_NAME}.min.css`),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
