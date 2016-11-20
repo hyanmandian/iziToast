@@ -1,0 +1,73 @@
+@import "./animations.css";
+
+.revealIn {
+  animation: revealIn 1s cubic-bezier(0.25, 1.6, 0.25, 1) both;
+}
+
+.slideIn {
+  animation: slideIn 1s cubic-bezier(0.16, 0.81, 0.32, 1) both;
+}
+
+.bounceInLeft {
+  animation: bounceInLeft 0.8s ease-in-out both;
+}
+
+.bounceInRight {
+  animation: bounceInRight 0.8s ease-in-out both;
+}
+
+.bounceInDown {
+  animation: bounceInDown 0.7s ease-in-out both;
+}
+
+.bounceInUp {
+  animation: bounceInUp 0.7s ease-in-out both;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease both;
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.7s ease both;
+}
+
+.fadeInDown {
+  animation: fadeInDown 0.7s ease both;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 0.9s cubic-bezier(0.25, 0.8, 0.25, 1) both;
+}
+
+.fadeInRight {
+  animation: fadeInRight 0.9s cubic-bezier(0.25, 0.8, 0.25, 1) both;
+}
+
+.flipInX {
+  animation: flipInX 0.9s cubic-bezier(0.35, 0, 0.25, 1) both;
+}
+
+.fadeOut {
+  animation: fadeOut 0.7s ease both;
+}
+
+.fadeOutDown {
+  animation: fadeOutDown 0.7s cubic-bezier(0.4, 0.45, 0.15, 0.91) both;
+}
+
+.fadeOutUp {
+  animation: fadeOutUp 0.7s cubic-bezier(0.4, 0.45, 0.15, 0.91) both;
+}
+.fadeOutLeft {
+  animation: fadeOutLeft 0.7s cubic-bezier(0.4, 0.45, 0.15, 0.91) both;
+}
+
+.fadeOutRight {
+  animation: fadeOutRight 0.7s cubic-bezier(0.4, 0.45, 0.15, 0.91) both;
+}
+
+.flipOutX {
+  backface-visibility: visible !important;
+  animation: flipOutX 0.7s cubic-bezier(0.4, 0.45, 0.15, 0.91) both;
+}

@@ -1,0 +1,33 @@
+.iziToast-buttons {
+  min-height: 17px;
+  display: inline-block;
+  margin: 0 -2px;
+
+  & > button,
+  & > a {
+    display: inline-block;
+    margin: 6px 2px;
+    border-radius: 2px;
+    border: 0;
+    padding: 5px 10px;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    background: rgba(0,0,0,0.1);
+    color: #000;
+
+    &:hover {
+      background: rgba(0,0,0,0.2);
+    }
+  }
+}
+
+.iziToast-color-dark .iziToast-buttons > button,
+.iziToast-color-dark .iziToast-buttons > a {
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+
+  &:hover {
+    background: rgba(255,255,255,0.2);
+  }
+}

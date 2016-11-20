@@ -1,0 +1,9 @@
+.iziToast-target {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.iziToast-target .iziToast {
+  width: 100%;
+}

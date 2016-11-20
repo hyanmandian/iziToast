@@ -1,0 +1,21 @@
+.iziToast-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  margin: 0;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.1);
+
+  @media (--mobile) {
+      border-radius: 3px 0 0 3px;
+  }
+}
+
+.iziToast-rtl .iziToast-cover {
+  left: auto;
+  right: 0;
+}

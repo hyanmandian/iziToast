@@ -1,0 +1,9 @@
+.iziToast-capsule {
+  font-size: 0;
+  height: auto;
+  max-height: 1000px;
+  width: 100%;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}

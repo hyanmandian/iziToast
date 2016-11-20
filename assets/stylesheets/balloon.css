@@ -1,0 +1,34 @@
+.iziToast.iziToast-balloon {
+  &::before {
+    content: '';
+    position: absolute;
+    right: 8px;
+    left: auto;
+    width: 0px;
+    height: 0px;
+    top: 100%;
+    border-right: 0px solid transparent;
+    border-left: 15px solid transparent;
+    border-top: 10px solid #000;
+    border-top-color: inherit;
+    border-radius: 0;
+  }
+
+  & > div {
+    border-radius: 0 0 0 3px;
+  }
+}
+
+.iziToast-wrapper-bottomLeft .iziToast.iziToast-balloon::before,
+.iziToast-wrapper-topLeft .iziToast.iziToast-balloon::before {
+  border-right: 15px solid transparent;
+  border-left: 0 solid transparent;
+  right: auto;
+  left: 8px;
+}
+
+@media (--mobile) {
+  .iziToast.iziToast-balloon::after {
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.25), inset 0 10px 20px -5px rgba(0,0,0,0.25);
+  }
+}
